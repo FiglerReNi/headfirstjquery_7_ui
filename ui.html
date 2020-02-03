@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="script/jquery-ui-themes-1.11.4/themes/sunny/jquery-ui.css">
 </head>
 <body>
-<div class="ui-widget-header ui-corner-top  ui-corner-bottom">
+<div class="ui-widget-header ui-corner-top  ui-corner-bottom main">
     <h2>Submit Your Cryptid Sighting</h2>
     <h3>Fill out the form below and click "Enter" to Submit</h3>
 </div>
@@ -41,21 +41,31 @@
         <input type="text" id="value3" class="just_display" name="height" placeholder="0" readonly>
         <div class="ui-slider-horizontal" id="myslider3"></div>
         <h3>Color of Creature:</h3>
-
+        <label>Color:</label>
+        <input type="text" class="just_display" name="creature_color" id="color_val" readonly>
+        <div id="swatch" class="ui-widget-content ui-corner-all"></div><br>
+        <label>Red:</label>
+        <input type="text" id="red_val" class="just_display" name="creature_color" readonly>
+        <div class="ui-slider-horizontal color" id="red"></div><br>
+        <label>Green:</label>
+        <input type="text" id="green_val" class="just_display" name="creature_color" readonly>
+        <div class="ui-slider-horizontal color" id="green"></div><br>
+        <label>Blue:</label>
+        <input type="text" id="blue_val" class="just_display" name="creature_color" readonly>
+        <div class="ui-slider-horizontal color" id="blue"></div>
     </div>
     <div class="ui-widget-content main">
         <h3>CRYPTID LOCATION DATA</h3>
     </div>
     <div class="ui-widget-content main">
         <h3>Latitude of Sighting:</h3>
-
-
+        <input type="text" id="value4" class="just_display" name="latitude" placeholder="0" readonly>
+        <div class="ui-slider-horizontal" id="myslider4"></div>
         <h3>Longitude of Sighting:</h3>
-
-
+        <input type="text" id="value5" class="just_display" name="longitude" placeholder="0" readonly>
+        <div class="ui-slider-horizontal" id="myslider5"></div>
     </div>
-
-    <div class="ui-widget-header ui-corner-top  ui-corner-bottom">
+    <div class="ui-widget-header ui-corner-top  ui-corner-bottom main">
         <button type="submit">Submit</button>
     </div>
 </form>
