@@ -90,6 +90,18 @@ $(document).ready(function () {
         $('#color_val').val(color);
         $('#swatch').css({"background-color" : color})
     }
+
+    $('#form').submit(function(){
+        return false;
+    });
+
+    $('#btnSave').click(function () {
+       var data = $('#form').serialize();
+       alert(data);
+       $.post($('#form').attr('action'), data, function (json) {
+
+       }, 'json')
+    })
 });
 
 
