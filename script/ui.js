@@ -96,8 +96,7 @@ $(document).ready(function () {
     });
 
     $('#btnSave').click(function () {
-       var data = $('#form').serialize();
-       alert(data);
+       var data = $('#form').serializeArray();
        $.post($('#form').attr('action'), data, function (json) {
 
        }, 'json')
