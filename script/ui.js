@@ -91,16 +91,21 @@ $(document).ready(function () {
         $('#swatch').css({"background-color" : color})
     }
 
-    $('#form').submit(function(){
+    $('#ui').submit(function(){
         return false;
     });
 
-    $('#btnSave').click(function () {
-       var data = $('#form').serializeArray();
-       $.post($('#form').attr('action'), data, function (json) {
-
-       }, 'json')
-    })
+    $("#btnSave").click(function () {
+        var data = $("#ui").serializeArray();
+        $.post('ui.php', data, function(json){
+            if(json.status === 'fail'){
+                alert(json.message);
+            }
+            if(json.status === 'success'){
+                alert(json.message);
+            }
+        }, "json")
+    });
 });
 
 

@@ -11,7 +11,7 @@
     <h2>Submit Your Cryptid Sighting</h2>
     <h3>Fill out the form below and click "Enter" to Submit</h3>
 </div>
-<form id="form" name="form" method="post" action="ui.php">
+<form id="ui" name="ui" method="post" action="ui.php">
     <div class="ui-widget-content main">
         <h3>CRYPTID SIGHTING DATA</h3>
     </div>
@@ -20,15 +20,15 @@
         <input type="text" name="date" id="datepicker"/>
         <h3>Creature Type:</h3>
         <div id="type_select">
-            <input type="radio" id="radio1" name="creature_type"/>
+            <input type="radio" id="radio1" value="Chupacabras" name="creature_type"/>
             <label for="radio1">Chupacabras</label>
-            <input type="radio" id="radio2" name="creature_type"/>
+            <input type="radio" id="radio2" value="Jersey Devil" name="creature_type"/>
             <label for="radio2">Jersey Devil</label>
-            <input type="radio" id="radio3" name="creature_type"/>
+            <input type="radio" id="radio3" value="Loch Ness Monster" name="creature_type"/>
             <label for="radio3">Loch Ness Monster</label>
-            <input type="radio" id="radio4" name="creature_type"/>
+            <input type="radio" id="radio4" value="Sasquatch" name="creature_type"/>
             <label for="radio4">Sasquatch</label>
-            <input type="radio" id="radio5" name="creature_type"/>
+            <input type="radio" id="radio5" value="Yeti" name="creature_type"/>
             <label for="radio5">Yeti</label>
         </div>
         <h3>Distance from Creature (in ft.):</h3>
@@ -42,7 +42,7 @@
         <div class="ui-slider-horizontal" id="myslider3"></div>
         <h3>Color of Creature:</h3>
         <label>Color:</label>
-        <input type="text" class="just_display" name="creature_color" id="color_val" readonly>
+        <input type="text" class="just_display" name="creature_color_rgb" id="color_val" readonly>
         <div id="swatch" class="ui-widget-content ui-corner-all"></div><br>
         <label>Red:</label>
         <input type="text" id="red_val" class="just_display" name="creature_color" readonly>
