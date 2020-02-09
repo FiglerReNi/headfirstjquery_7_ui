@@ -8,7 +8,7 @@ USE user_interface;
 
 CREATE TABLE `user_interface`.`form`(  
   `id` INT NOT NULL AUTO_INCREMENT,
-  `date` DATE NOT NULL,
+  `date` VARCHAR(16) NOT NULL,
   `type` VARCHAR(32) NOT NULL,
   `distance` INT(8) UNSIGNED DEFAULT 0,
   `weight` INT(8) UNSIGNED DEFAULT 0,
